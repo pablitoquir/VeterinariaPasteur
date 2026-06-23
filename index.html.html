@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Consultorio Veterinario Pasteur | Clínica Veterinaria en Villa Luzuriaga</title>
+    <meta content="Consultorio Veterinario Pasteur en Villa Luzuriaga. Cirugías con anestesia inhalatoria, ecografías, vacunas y atención profesional para tu mascota." name="description">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f0eded",
+                        "inverse-surface": "#313030",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2e014b",
+                        "on-primary-container": "#eed9ff",
+                        "inverse-primary": "#dcb8ff",
+                        "surface": "#fcf9f8",
+                        "on-surface-variant": "#4c4354",
+                        "primary-fixed-dim": "#dcb8ff",
+                        "tertiary": "#623a7f",
+                        "primary-container": "#8a2be2",
+                        "outline": "#7e7386",
+                        "surface-variant": "#e5e2e1",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed": "#f3daff",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-tint": "#8422dc",
+                        "secondary-fixed": "#eaddff",
+                        "on-primary-fixed": "#2c0051",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary-fixed-variant": "#543098",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#cfc2d7",
+                        "on-tertiary-fixed-variant": "#5d357a",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#f2d8ff",
+                        "primary-fixed": "#efdbff",
+                        "tertiary-container": "#7c5299",
+                        "on-background": "#1c1b1b",
+                        "secondary-container": "#b390fe",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary-fixed": "#25005a",
+                        "secondary": "#6c49b2",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary": "#6e00c1",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#d2bbff",
+                        "tertiary-fixed-dim": "#e2b5ff",
+                        "on-secondary-container": "#461f8a",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#6700b5",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-dim": "#dcd9d9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "auto",
+                        "md": "24px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "max-width": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .whatsapp-green {
+            background-color: #25D366;
+            color: white;
+        }
+        .whatsapp-green:hover {
+            background-color: #128C7E;
+        }
+        .glass-header {
+            background: rgba(252, 249, 248, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(138, 43, 226, 0.08);
+        }
+        .service-card:hover .service-overlay {
+            opacity: 1;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-white">
+    <header class="fixed top-0 w-full z-50 glass-header shadow-sm h-20">
+        <div class="flex justify-between items-center max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-full">
+            <div class="flex items-center gap-3">
+                <img src="logocompleto.png" alt="Logo Pasteur" class="h-14 w-auto object-contain">
+                <div class="font-headline-md text-lg md:text-xl font-bold text-primary">
+                    Consultorio Veterinario Pasteur
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-gutter">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#inicio">Inicio</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#servicios">Servicios</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Catálogo</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#ubicacion">Ubicación</a>
+                <a class="whatsapp-green px-6 py-2 rounded-full font-bold text-label-md flex items-center gap-2 transform active:scale-95 transition-all" href="https://wa.me/5491143991934" target="_blank">WhatsApp</a>
+            </nav>
+            <button class="md:hidden text-primary p-2" id="mobile-menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant/30 shadow-lg">
+            <div class="flex flex-col py-4 px-margin-mobile gap-3">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#inicio">Inicio</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#nosotros">Nosotros</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#servicios">Servicios</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#catalogo">Catálogo</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#ubicacion">Ubicación</a>
+                <a class="whatsapp-green px-6 py-3 rounded-full font-bold text-label-md flex items-center justify-center gap-2 transform active:scale-95 transition-all" href="https://wa.me/5491143991934" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center pt-20" id="inicio">
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img alt="Hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ7Deq0ton3MvYAZsucu9CKtopEAiLA_D7oCtulfaEtddpIs02CC3lhYHDW6RVWLcRra0f6MyO-ix8eYHifmjj_c3wYlPxV0MYhJYcYgteeoKBNlTqhRP-rf6_ES2X0RRLVmOpFYr3sZ-8A-NuW4brP_CAUR64FgxC_F4TlfhoT_ER8PNogFUSjYEVzlaWKK4OvkfZh9QQ3vkLzkhMGBsS-CahDwIw8zYvaojkin6sJuoaB85a2_NjsBAHjkm4t9gans80Q-0R">
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full">
+                <div class="max-w-2xl">
+                    <h1 class="font-display-lg text-[48px] leading-[1.1] mb-4 text-primary font-bold">
+                        Cuando la prioridad es la mascota
+                    </h1>
+                    <p class="font-body-lg text-[18px] text-on-surface-variant mb-8 max-w-lg">
+                        Atención médica integral de mediana y alta complejidad para perros y gatos en Villa Luzuriaga. Profesionales dedicados al cuidado de pequeños animales.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a class="bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-lg font-bold text-body-md flex items-center justify-center gap-2 shadow-md transform hover:-translate-y-1 transition-all w-fit" href="https://wa.me/5491143991934" target="_blank">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface" id="nosotros">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="relative h-[500px] rounded-2xl overflow-hidden card-shadow">
+                            <img class="w-full h-full object-cover" alt="Veterinary examination room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm8tV6aIrFCIzScckCjbY-u9QWK6unUt3WYPI1ebxyjSYzMzxXLo5Sfsrli5UpiAHmpvyOoLBL2S1lFqdhkw828hIy0JGx5jrDEAoCOFruyqlT3P676TcSle7FgAbzUaLJA8QNPPTzwZd4MaNxHDJp45Q0mF3iPuudCl--Ex71LcvcSVQHm2mZ1FjhS3ATr1lBa-59hGIRzRr9Xr0LRh-7UzBazJfa95DEdzahiQdAGJhFcdEUFKx6feOGuObKqrrobdUowNmk">
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 space-y-md">
+                        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">TRAYECTORIA Y CONFIANZA</span>
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface">Compromiso con la Salud Animal</h2>
+                        <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
+                            <p>En el Consultorio Vet. Pasteur, combinamos años de experiencia clínica sumado a un equipamiento adecuado para la resolución de situaciones de mediana y alta complejidad. Nuestro equipo de profesionales está altamente capacitado para enfrentar casos complejos priorizando el bienestar de los pacientes.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span><span class="font-label-md text-label-md">Alta Complejidad</span></div>
+                            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span><span class="font-label-md text-label-md">Atención Humana</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface-container-low" id="servicios">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-xl">
+                    <h2 class="font-headline-lg text-[32px] font-bold text-on-surface">Servicios Médicos Profesionales</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-gutter">
+                    <div class="bg-surface p-md rounded-2xl card-shadow border border-outline-variant/30 flex flex-col items-center text-center justify-center min-h-[200px]">
+                        <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-4 text-primary"><span class="material-symbols-outlined text-xl">medical_services</span></div>
+                        <h3 class="font-headline-md text-lg font-bold mb-2">Consultas Médicas</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm px-2">Atención clínica general y preventiva con enfoque integral. Atención sin turno, priorizando urgencias.</p>
+                    </div>
+                    <div class="md:col-span-2 relative group overflow-hidden rounded-2xl card-shadow min-h-[250px] md:h-auto">
+                        <img alt="Cirugía" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBiRMnpvcQ5wyKoWR93rbsHYuJk7HlihfDYVzHGxomb1cWkGu5lazMzEJKVGHLr0jfwofYPb9CXpm_ue-QSNoA49WFm9YGPtITvQE0_ZBYC_ggBTbbw-hewrFbkr-5CZA3McmIJbx1Ncfnhvl-z4Iid0RpgkeOBvJAdcVga8-IUPkKY5voZSbVHgDcyRPvEsA3rE3gZxXNfxPBBTLyng7gIT8MPS92I_ZL-tUWzJjFJDYlbtpzbT-bHonSIMqs2CZYcCwrNO3R">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent p-md flex flex-col justify-end">
+                            <h3 class="font-headline-md text-xl font-bold text-white mb-1">Cirugía con Anestesia Inhalatoria</h3>
+                            <p class="text-white/90 font-body-md text-sm">Procedimientos quirúrgicos con constante monitoreo a cargo de un anestesista en conjunto al cirujano que realiza la maniobra.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 relative group overflow-hidden rounded-2xl card-shadow min-h-[250px] md:h-auto">
+                        <img alt="Ecografía" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzxE0q5xNhcBZnJKLAFNIzdHEdLyFKWjj8UDoHhok5LTq4LBkJsh1s-UfJXtTcW6wdnSMCbhzS_GpcRpLQ-RXV8TFrx0nA7VCMW0q76Yzr-_uVn2gUgPgLW5RheZAG2LZjJYN4VXTkK5AZOZ9CqjPNCVc9nOjzMRT5uo4iqcArp0UDrDGIwrd0NvG1x9e62gJ7AvZHF0NMeJ8qdjtLwoPqPzJ9EyCm80nBIj1cStnLE8JnGv6fNgiUQliIAkcc4CPq8ry0Z96o">
+                        <div class="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/30 to-transparent p-md flex flex-col justify-end">
+                            <h3 class="font-headline-md text-xl font-bold text-white mb-1">Ecografías Diagnósticas</h3>
+                            <p class="text-white/90 font-body-md text-sm">Disponemos de servicio ecográfico constante para diagnósticos rápidos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-surface p-md rounded-2xl card-shadow border border-outline-variant/30 flex flex-col items-center text-center justify-center min-h-[200px]">
+                        <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-4 text-primary"><span class="material-symbols-outlined text-xl">vaccines</span></div>
+                        <h3 class="font-headline-md text-lg font-bold mb-2">Vacunación</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm px-2">Planes completos de inmunización para cachorros y adultos.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                    <div class="bg-surface p-md rounded-2xl card-shadow border border-outline-variant/30 flex flex-col items-center text-center justify-center min-h-[200px]">
+                        <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-4 text-primary"><span class="material-symbols-outlined text-xl">monitor_heart</span></div>
+                        <h3 class="font-headline-md text-lg font-bold mb-2">Cardiología</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm px-4">Consultas cardiológicas y ecocardiograma los días martes de 10 a 13hs sin turno previo.</p>
+                    </div>
+                    <div class="bg-surface p-md rounded-2xl card-shadow border border-outline-variant/30 flex flex-col items-center text-center justify-center min-h-[200px]">
+                        <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-4 text-primary"><span class="material-symbols-outlined text-xl">biotech</span></div>
+                        <h3 class="font-headline-md text-lg font-bold mb-2">Laboratorio Clínico</h3>
+                        <p class="font-body-md text-on-surface-variant text-sm px-4">Medición de parámetros básicos y de relevancia en el momento y toma de muestras en forma continua para estudios de mayor complejidad (laboratorio externo).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface" id="catalogo">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center mb-xl">
+                    <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest"></span>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Emergencias y Maniobras Complejas</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Servicios especializados para derivaciones y apoyo a veterinarios.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm transition-all duration-500 hover:shadow-lg h-auto min-h-[450px]">
+                        <img alt="Nuestro Equipamiento" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5EZ_o8LM_hhJ5GprCEVKm1hODRY19-ziGSDrngYjiejkKlG6T3CzXmcCSAGeYa2cZVayxpeulRC2uZuPfUubDve1q3fca837s00NezLlBFQNdd0SPhIYTrNZStklxAV77aDr7szeuoWBV-OIHTrMKbJkNS2O-L7SMGmCpnmeqxj_QxSN1yTWEqI0z0qmPls4PfkNzDG8ThkoygiqEBA3PsCuEu4ZrK3CnmGE-Bjyfw7PkCzsC_nL8okaICXrUJ4CJOEa-Dzl6">
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/70 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 p-lg w-full">
+                            <span class="font-label-sm text-label-sm text-primary-fixed bg-primary px-sm py-1 rounded-full mb-sm inline-block">TECNOLOGÍA</span>
+                            <h3 class="font-headline-lg text-headline-lg text-white mb-md">Nuestro Equipamiento</h3>
+                            <ul class="font-body-md text-body-md text-white/90 max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 list-none">
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Monitores multiparamétricos con capnografía y medición de presión invasiva</li>
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Bomba de infusión continua</li>
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Ventilador mecánico a volumen control</li>
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Anestesia inhalatoria</li>
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Centrífuga para mediciones rápidas</li>
+                                <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary-fixed text-sm mt-1">check_circle</span>Ecógrafo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm transition-all duration-500 hover:shadow-lg h-auto min-h-[350px]">
+                        <div class="flex flex-col md:flex-row h-full">
+                            <div class="md:w-1/2 p-lg flex flex-col justify-center">
+                                <span class="material-symbols-outlined text-primary text-4xl mb-sm">emergency_share</span>
+                                <h3 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Cirugía</h3>
+                                <div class="font-body-md text-body-md text-on-surface-variant mb-lg space-y-3">
+                                    <p>Equipamiento moderno servicio de cirugía con equipo de anestesista y cirujano, con soporte ventilatorio, respirador volumen control, electrobisturí y equipamiento para coagulación (Liga Sure).</p>
+                                    <p>Ofrecemos las instalaciones en caso que el cirujano prefiera realizar la maniobra, brindando el servicio de anestesista, instrumental para tejidos blandos y material descartable.</p>
+                                    <p class="text-sm italic">(Consultar por materiales especiales)</p>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 relative overflow-hidden min-h-[250px] bg-surface-variant/50 flex items-center justify-center">
+                                <!-- Espacio reservado para foto -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-xl glass-effect p-lg md:p-xl rounded-3xl text-center">
+                    <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2 block">Información para Veterinarios</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-md">Resolución en Equipo</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-lg">Entendemos la responsabilidad de derivar un paciente; en nuestro consultorio, garantizamos un reporte detallado del caso y el compromiso del retorno del paciente a su clínica de origen una vez finalizada la tarea por la cual fue derivado.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl max-w-4xl mx-auto">
+                        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mb-md"><span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Alta Complejidad</h4><p class="font-body-md text-body-md text-on-surface-variant">Maniobras de estabilización para DTG FLUTD, colocación de tubo toracostomía; estabilización pre-internación de convulsivos, politraumatizados, entre otros.</p></div>
+                        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mb-md"><span class="material-symbols-outlined text-primary text-3xl">handshake</span></div><h4 class="font-headline-md text-headline-md text-on-surface mb-xs">Ética Profesional</h4><p class="font-body-md text-body-md text-on-surface-variant">Priorizamos la relación médico-cliente de la veterinaria derivante.</p></div>
+                    </div>
+                    <div class="flex flex-col items-center gap-md">
+                        <p class="font-label-md text-label-md text-on-surface-variant">¿Desea coordinar una derivación inmediata?</p>
+                        <a class="h-[64px] px-xl bg-primary-container text-on-primary-container rounded-full font-headline-md text-headline-md shadow-lg flex items-center gap-md hover:brightness-110 transition-all" href="https://wa.me/5491143991934">Consultar por Derivaciones<span class="material-symbols-outlined">arrow_outward</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-primary-container text-white">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-lg text-center">
+                    <div class="space-y-2"><span class="material-symbols-outlined text-5xl mb-2">precision_manufacturing</span><h4 class="font-headline-md text-headline-md">Tecnología avanzada</h4></div>
+                    <div class="space-y-2"><span class="material-symbols-outlined text-5xl mb-2">favorite</span><h4 class="font-headline-md text-headline-md">Trato humano</h4></div>
+                    <div class="space-y-2"><span class="material-symbols-outlined text-5xl mb-2">speed</span><h4 class="font-headline-md text-headline-md">Diagnóstico rápido</h4></div>
+                    <div class="space-y-2"><span class="material-symbols-outlined text-5xl mb-2">verified</span><h4 class="font-headline-md text-headline-md">Trayectoria</h4></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg text-center">Experiencias de nuestros clientes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <div class="bg-white p-6 rounded-xl card-shadow flex flex-col items-center text-center border border-outline-variant/20"><img alt="Testimonial" class="w-full h-auto mb-4 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD27_CYzcNyo7f1c2928htr34nrWxKMiW39IJD7_i0LsG11HVBKuQDClZ-39WiQ1SvjhQq7sjfyiof9rL-OyQSeDRIM4o51AABJsErqyy5LQGJbxMxy70TAGM7e00d9Nz3yVK2pgBL6gHm5Rq-sQiZIjBlgCM4ZJGiXvJ8dT9qlffJPaQN_WFqYjT5-FfLQWGgIKb25wjVaS0SufMKhbue5sqBZcUZcMQ1WsT0X3co5UXyT1pt9XFPLtBKqIMCk6JgbjU4wWZFf"></div>
+                    <div class="bg-white p-6 rounded-xl card-shadow flex flex-col items-center text-center border border-outline-variant/20"><img alt="Testimonial" class="w-full h-auto mb-4 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEkrh8y6Aj5KXPNNVeKn1GiLG749_zVk-pkkEaXcY3dxoL68LY0FYUDpR-Ba70mavkYMmKuuy-TnEI1pOUHGyDnxxpmPUnvi2Etlhy7dwdLiAT-kDOLlN8qpA3H_KVLX3Kdx4UKfdUaqGlj3rwtT980QMKcCeQe3Uplxe2fs2wEWKkzZlXGwbkdXSulGMp1oIz_SRaZ6AfMum9Cz8ckqnSlyA2PAp5bV_jdzD60q4LHlgnNRHYOMrcREF-kbEKrCIu2ocLEOvf"></div>
+                    <div class="bg-white p-6 rounded-xl card-shadow flex flex-col items-center text-center border border-outline-variant/20"><img alt="Testimonial" class="w-full h-auto mb-4 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9m5A_U2yDlfk1kMu-KqxbYR_4lPjfaOWZt-hvzZDyPZOF8Ty6_mRbOQJnWXV0_mzgxBqbQ1eWzHGno9mQokMgKCd2EO1CX6pPAVNe6kZ05bCCnc7OHSDvV3OtN4nh_OXwgfwj3yrl0tRNBZBT3sQv_hCPrp4ihbKUJSz9AgN8Aad_V2_fNNMGYmuS9wm7dkXGkw5hkFdBno4cvucd4oFMec_UcoYHt6RJAErcoWhqRtRIUARNpXSriVF8X54z1vITtGNHHhFp"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface-container" id="ubicacion">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+                    <div class="space-y-6">
+                        <h2 class="font-headline-lg text-headline-lg">Dónde encontrarnos</h2>
+                        <div class="flex items-start gap-4"><span class="material-symbols-outlined text-primary mt-1">location_on</span><div><p class="font-headline-md text-headline-md">Pasteur 1845</p><p class="font-body-lg text-body-lg text-on-surface-variant">Villa Luzuriaga, Buenos Aires.</p></div></div>
+                        <p class="font-body-md text-on-surface-variant">Atendemos Villa Luzuriaga y todos los barrios aledaños de la zona oeste.</p>
+                        <div class="space-y-4"><div class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">schedule</span><p class="font-body-md">Lun-Sáb 10-13hs y 17-20hs (Dom y Miércoles a la tarde cerrados)</p></div><div class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">call</span><p class="font-body-md">011 4399-1934</p></div></div>
+                        <a class="whatsapp-green inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold shadow-lg transform active:scale-95 transition-all w-full md:w-auto justify-center" href="https://wa.me/5491143991934" target="_blank"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>Contacto</a>
+                    </div>
+                    <div class="h-[400px] rounded-2xl overflow-hidden card-shadow bg-surface-dim relative">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4UsRVAYCBhEygx74_1O3N0wlJRixLM3k5w2GbVyj2mPfW-zbSDjTxBl6EChW0a6IYEb-ykVT5Z9URPeIWmawbCjb5JyNcPFqf0yzzDnKUzH_KqCqaE9wIcnfll896B2ChkP-TN2A8bFtVB0lN66Z-FBin_mDj5J-W3OW9xb0VC6J0bOM3gNCPOdNUqvJJxb1HdiZkFOv5AZC6zfK4EEfbh6_oGEJIheYfF8s39bp0Hh6_EVwCWR1MV3k72WbdRXWY0jahB7zr')"></div>
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/10"><div class="bg-white px-6 py-3 rounded-full shadow-xl flex items-center gap-2"><span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">location_on</span><span class="font-bold text-primary">Pasteur 1845</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-inverse-surface text-surface py-xl">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <div class="space-y-4"><div class="font-headline-md text-headline-md font-bold text-inverse-primary">Consultorio Veterinario Pasteur</div><p class="font-body-md text-surface-variant max-w-xs">Cuidado profesional y humano para tu mascota en el corazón de Villa Luzuriaga.</p><div class="flex gap-4"><a class="text-surface-variant hover:text-inverse-primary transition-colors" href="https://instagram.com/veterinaria_pasteur" target="_blank"><span class="material-symbols-outlined">camera</span></a></div></div>
+                <div class="space-y-4"><h5 class="font-label-md text-label-md text-inverse-primary uppercase tracking-widest">Atención</h5><ul class="space-y-2 font-body-md text-surface-variant"><li>Lun-Sáb 10-13hs y 17-20hs<br>(Dom y Miércoles a la tarde cerrados)</li><li>WhatsApp: 11 4399-1934</li><li>Villa Luzuriaga, BA</li></ul></div>
+                <div class="space-y-4"><h5 class="font-label-md text-label-md text-inverse-primary uppercase tracking-widest">Atajos</h5><ul class="space-y-2 font-body-md text-surface-variant"><li><a class="hover:text-inverse-primary" href="#nosotros">Nuestra Clínica</a></li><li><a class="hover:text-inverse-primary" href="#servicios">Especialidades</a></li><li><a class="hover:text-inverse-primary" href="#catalogo">Catálogo</a></li><li><a class="hover:text-inverse-primary" href="#ubicacion">Cómo Llegar</a></li></ul></div>
+            </div>
+            <div class="mt-xl pt-md border-t border-surface-variant/20 flex flex-col md:flex-row justify-between items-center gap-4"><p class="font-label-sm text-label-sm text-surface-variant">© Consultorio Veterinario Pasteur. Cuidado profesional para tu mascota.</p><div class="flex gap-6 text-label-sm font-label-sm text-surface-variant"><a class="hover:text-inverse-primary" href="#">Aviso de Privacidad</a></div></div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Cerrar menú al hacer clic en un enlace
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+        // Header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
